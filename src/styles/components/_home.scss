@@ -6,11 +6,15 @@
 
 }
 
+iframe{
+width: 100%;
+
+}
 .services{
 
-  text-align: center;
+  text-align:center;
   margin-bottom: 5%;
-  display:inline-block;
+  display:block;
   // img {
   //   margin:0.5%; 	
   //     box-shadow: 5px 9px 15px $color-1;
@@ -54,7 +58,7 @@
   }
   .profile:hover {
     background: url("../imgt/menage.jpg") right center no-repeat;
-    background-size: 400px;
+    background-size:100%;
   }
   .profile:hover h2 {
     opacity: 1;

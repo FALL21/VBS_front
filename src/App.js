@@ -11,28 +11,14 @@ import Menage from './pages/Services/menage/menage';
 import Post from "./pages/Post";
 import Demande from "./pages/Formulaire_dm";
 import Prestataire from "./pages/Prestataires";
+import { useMediaQuery } from "react-responsive";
 //import { replaceOne } from "../../models/user.model";
 
 
 const App = () => {
-  // const [uid, setUid] = useState(null);
+  
 
-  // useEffect(() => {
-  //   const fetchToken = async () => {
-  //     await axios({
-  //       method: "get",
-  //       url: `${process.env.REACT_APP_API_URL}jwtid`,
-  //       withCredentials: true,
-  //     })
-  //       .then((res) => {
-  //         console.log(res);
-  //         setUid(res.data);
-  //       })
-  //       .catch((_err) => console.log("No token"));
-  //   };
-  //   fetchToken();
 
-  // }, [uid]);
   const user = localStorage.getItem('token')
 
   return (
@@ -57,6 +43,6 @@ const App = () => {
       </>
     // </UidContext.Provider>
   );
-};
+  };
 
 export default App; 
