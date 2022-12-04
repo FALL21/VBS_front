@@ -33,7 +33,6 @@ const App = () => {
         </Route> 
         <Route path='/Agence' element={< Agence />} />
         <Route path='/Prestataire' element={<Prestataire />}/>
-
         {user && <Route path='/Post' element={< Post />} />}
         <Route path='/Post' element={ <Navigate replace to ="/agence" /> } />
 

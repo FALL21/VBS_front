@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../components/Logo';
 import Footer from './footer';
+import Whatsapp from './whatsapp';
 
 const demande = () => {
     window.location = "/Formulaire_dm";
@@ -52,25 +53,24 @@ const Home = () => {
                 <div onClick={demande} className="card profile6">
                     <h2>IMMOBILIER</h2>
                 </div>
-                <div onClick={demande} className="card profile7">
+                {/* <div onClick={demande} className="card profile7">
                     <h2>VOIX OFF</h2>
-                </div>
+                </div> */}
                 <div onClick={demande} className="card profile8">
                     <h2>ALIMENTATION</h2>
                 </div>
-                <div onClick={demande} className="card profile9">
+                {/* <div onClick={demande} className="card profile9">
                     <h2>PRESTATION</h2>
-                </div>
-                <div onClick={demande} className="card profile10">
+                </div> */}
+                {/* <div onClick={demande} className="card profile10">
                     <h2>VULGARISATEUR</h2>
                 </div>
                 <div onClick={demande} className="card profile11">
-                    <h2>TRAVEAUX</h2>
-                </div>
+                    <h2>TRAVAUX</h2>
+                </div> */}
             </div>
 
-
-
+            <Whatsapp/>
 
 
 <Footer />

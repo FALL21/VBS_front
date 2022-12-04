@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Logo from '../components/Logo';
 import axios from 'axios';
 import Footer from './footer';
+import Whatsapp from './whatsapp';
 
 const Demande = () => {
 
@@ -79,6 +80,8 @@ const Demande = () => {
                     </form> */}
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScuWZfEAhfkbSgsQCEXBgxbOpzozwQE5N712PBhIs36rGRUcw/viewform?embedded=true" width="640" height="676" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
                   </div>
+
+                  <Whatsapp/>
                   <Footer />
         </div>
     );

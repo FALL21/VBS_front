@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import Logo from '../../components/Logo';
 import Footer from '../footer';
+import Whatsapp from '../whatsapp';
 
 const demande = () => {
     window.location = "/Formulaire_dm";
@@ -32,6 +33,7 @@ const Services = () => {
                     <NavLink to='/services/menage' className={(nav) => (nav.isActive ? "nav-active" : "")}> Services de menage</NavLink>
                 </div>
             </nav>
+            <Whatsapp/>
             <Outlet />
             <Footer />
         </>
