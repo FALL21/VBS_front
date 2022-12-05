@@ -44,9 +44,6 @@ const Home = () => {
                 <div onClick={demande} className="card profile3">
                     <h2>TRAITEUR</h2>
                 </div>
-                <div onClick={demande} className="card profile4">
-                    <h2>ETUDE</h2>
-                </div>
                 <div onClick={demande} className="card profile5">
                     <h2>LOCATION</h2>
                 </div>
@@ -58,6 +55,9 @@ const Home = () => {
                 </div> */}
                 <div onClick={demande} className="card profile8">
                     <h2>ALIMENTATION</h2>
+                </div>
+                <div onClick={demande} className="card profile4">
+                    <h2>ETUDE</h2>
                 </div>
                 {/* <div onClick={demande} className="card profile9">
                     <h2>PRESTATION</h2>
