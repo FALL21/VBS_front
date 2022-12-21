@@ -11,7 +11,7 @@ import Menage from './pages/Services/menage/menage';
 import Post from "./pages/Post";
 import Demande from "./pages/Formulaire_dm";
 import Prestataire from "./pages/Prestataires";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
 //import { replaceOne } from "../../models/user.model";
 
 
@@ -37,8 +37,7 @@ const App = () => {
         <Route path='/Post' element={ <Navigate replace to ="/agence" /> } />
 
         <Route path='/Formulaire_dm' element={< Demande />} />
-
-      </Routes>
+      </Routes> 
       </>
     // </UidContext.Provider>
   );
