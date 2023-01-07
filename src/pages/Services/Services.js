@@ -11,7 +11,7 @@ const Services = () => {
     return (
         <>
             <Logo />
-            {/* <h1>Nos Services</h1> */}
+            <h1>Nos Services disponibles en temps réel 24h/24 </h1>
             <div className="services">
                 <div onClick={demande} className="card profile">
                     <h2>MENAGE</h2>

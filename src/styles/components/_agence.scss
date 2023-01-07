@@ -11,9 +11,9 @@
     display: grid;
     grid-template-columns: 60% 40%;
 
-    @media screen and(max-width: 885px) {
-      grid-template-columns: 1fr;
-    }
+    // @media screen and(max-width: 885px) {
+    //   grid-template-columns: 1fr;
+    // }
   }
 
   .connection-form {
@@ -26,17 +26,17 @@
     padding: 20px;
     border-radius: 20px;
 
-    @media screen and(max-width: 550px) {
-      min-width: 200px;
-    }
+    // @media screen and(max-width: 550px) {
+    //   min-width: 200px;
+    // }
 
     .form-container {
       display: grid;
       grid-template-columns: 30% 70%;
 
-      @media screen and(max-width: 550px) {
-        grid-template-columns: 1fr;
-      }
+      // @media screen and(max-width: 550px) {
+      //   grid-template-columns: 1fr;
+      // }
 
       ul {
         li {
@@ -45,10 +45,10 @@
           padding: 10px 20px;
           transition: 0.2s;
 
-          @media screen and(max-width: 550px) {
-            width: 80%;
-            margin: 0 auto;
-          }
+          // @media screen and(max-width: 550px) {
+          //   width: 80%;
+          //   margin: 0 auto;
+          // }
         }
         .active-btn {
           background: $color-1;
@@ -64,8 +64,8 @@
         }
         #login {
           position: relative;
-          @media screen and(max-width: 550px) {
-            margin-bottom: 30px;
+          // @media screen and(max-width: 550px) {
+          //   margin-bottom: 30px;
 
             &:after {
               content: "";
@@ -110,34 +110,34 @@
     img {
       height: 280px;
 
-      @media screen and(max-width: 1050px) {
-        height: 220px;
-      }
-      @media screen and(max-width: 950px) {
-        height: 200px;
-      }
-      @media screen and(max-width: 885px) {
-        display: none;
-      }
+      // @media screen and(max-width: 1050px) {
+      //   height: 220px;
+      // }
+      // @media screen and(max-width: 950px) {
+      //   height: 200px;
+      // }
+      // @media screen and(max-width: 885px) {
+      //   display: none;
+      // }
     }
   }
   .update-container {
     display: grid;
     grid-template-columns: 50% 50%;
 
-    @media screen and(max-width: 700px) {
-      grid-template-columns: 1fr;
-    }
+    // @media screen and(max-width: 700px) {
+    //   grid-template-columns: 1fr;
+    // }
 
-   div {
+    > div {
       background: $color-3;
       border-radius: 20px;
       padding: 25px;
       margin: 20px 10px;
 
-      @media screen and(max-width: 700px) {
-        margin: 10px 10px;
-      }
+      // @media screen and(max-width: 700px) {
+      //   margin: 10px 10px;
+      // }
     }
     .left-part {
       text-align: center;
@@ -155,7 +155,7 @@
         box-shadow: 0 0 6px rgba(51, 51, 51, 0.363);
       }
       form {
-        text-align: center;
+        position: relative;
 
         label {
           position: absolute;
@@ -177,9 +177,9 @@
           cursor: pointer;
           padding: 10px 20px;
 
-          @media screen and(max-width: 1121px) {
-            opacity: 0;
-          }
+          // @media screen and(max-width: 1121px) {
+          //   opacity: 0;
+          // }
         }
         input[type="submit"] {
           margin-top: 10px;
@@ -345,4 +345,4 @@
       }
     }
   }
-}
+

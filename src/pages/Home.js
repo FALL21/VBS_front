@@ -14,19 +14,19 @@ const demande = () => {
 const Home = () => {
 
 
-let img_name ="";
+    // let img_name = "";
 
 
-    const popup = (service_name) => {
-        switch (service_name) {
-            case "lr":
-                img_name = "catologue.png"
-                break;
-        
-            default:
-                break;
-        }
-        
+    const popup = () => {
+        // switch (service_name) {
+        //     case "lr":
+        //         img_name = "catologue.png"
+        //         break;
+
+        //     default:
+        //         break;
+        // }
+
 
         const modal = document.querySelector(".modal");
         const overlay = document.querySelector(".overlay");
@@ -53,7 +53,7 @@ let img_name ="";
 
     }
 
-            // close modal function
+    // close modal function
     const closeModal = function () {
         const modal = document.querySelector(".modal");
         const overlay = document.querySelector(".overlay");
@@ -62,30 +62,30 @@ let img_name ="";
         overlay.classList.add("hidden");
     };
 
-   
-
-        return (
-            <>
-                
-                <section class="modal hidden" >
-                    <carousel class="flex">
-                        <img className='imgctl' src={`./img/${img_name}`} width="500px" height="500px" alt="catalogue" />
-                        {/* <button onClick={closeModal} className="btn-close">⨉</button> */}
-                    </carousel>
-                    
-                    <button onClick={demande} class="btnd">Lancer la Demande</button>
-                </section>
-    
-                <div class="overlay hidden"></div>
 
 
-                <Logo />
-                <div className="home">
-                    <h1> Ici vos besoins sont nos missions </h1>
-                    <br />
-                    <h3>Trouvez le prestataire idéal pour tous vos services du quotidien</h3>
-                </div>
-                {/* <div className='services'>
+    return (
+        <>
+
+            <section class="modal hidden" >
+                <carousel class="flex">
+                    <img className='imgctl' src="./img/catologue.png" width="500px" height="500px" alt="catalogue" />
+                    {/* <button onClick={closeModal} className="btn-close">⨉</button> */}
+                </carousel>
+
+                <button onClick={demande} class="btnd">Lancer la Demande</button>
+            </section>
+
+            <div class="overlay hidden"></div>
+
+
+            <Logo />
+            <div className="home">
+                <h1> Ici vos besoins sont nos missions </h1>
+                <br />
+                <h3>Trouvez le prestataire idéal pour tous vos services du quotidien</h3>
+            </div>
+            {/* <div className='services'>
                     <img src="./imgt/traiteur.jpg" alt="" />
                     <img src="./imgt/lingere.jpg" alt="" />
                     <img src="./imgt/courtier.jpg" alt="" />
@@ -100,56 +100,56 @@ let img_name ="";
                     <img src="./imgt/location.jpg" alt="" />
     
                 </div> */}
-                <div className="services">
-                    <div onClick={demande} className="card profile">
-                        <h2>MENAGE</h2>
-                    </div>
-                    <div onClick={popup("lr")} class="btn btn-open" className="card profile1">
-                        {/* <button class="btn btn-open">+</button> */}
-                        <h2>LINGERE</h2>
-
-                    </div>
-                    <div onClick={demande} className="card profile2">
-                        <h2>COURTIER</h2>
-                    </div>
-                    <div onClick={demande} className="card profile3">
-                        <h2>TRAITEUR</h2>
-                    </div>
-                    <div onClick={demande} className="card profile5">
-                        <h2>LOCATION</h2>
-                    </div>
-                    <div onClick={demande} className="card profile6">
-                        <h2>IMMOBILIER</h2>
-                    </div>
-                    {/* <div onClick={demande} className="card profile7">
-                        <h2>VOIX OFF</h2>
-                    </div> */}
-                    <div onClick={demande} className="card profile8">
-                        <h2>ALIMENTATION</h2>
-                    </div>
-                    <div onClick={demande} className="card profile4">
-                        <h2>ETUDE</h2>
-                    </div>
-                    {/* <div onClick={demande} className="card profile9">
-                        <h2>PRESTATION</h2>
-                    </div> */}
-                    {/* <div onClick={demande} className="card profile10">
-                        <h2>VULGARISATEUR</h2>
-                    </div>
-                    <div onClick={demande} className="card profile11">
-                        <h2>TRAVAUX</h2>
-                    </div> */}
+                <h3 className='inf'>SERVICES PERSONNELS</h3>
+            <div className="services">
+                <div onClick={demande} className="card profile">
+                    <h2>MENAGE</h2>
                 </div>
+                <div onClick={popup} class="btn btn-open" className="card profile1">
+                    {/* <button class="btn btn-open">+</button> */}
+                    <h2>LINGERE</h2>
+                </div>
+                <div onClick={demande} className="card profile2">
+                    <h2>LIVREUR</h2>
+                </div>
+                <div onClick={demande} className="card profile3">
+                    <h2>TRAITEUR</h2>
+                </div>
+                <div onClick={demande} className="card profile5">
+                    <h2>ETUDE</h2>
+                </div>
+                <div onClick={demande} className="card profile9">
+                    <h2>FORMATION</h2>
+                </div>
+                <div onClick={demande} className="card profile10">
+                    <h2>DECORATION</h2>
+                </div>
+                <div onClick={demande} className="card profile11">
+                    <h2>BTP</h2>
+                </div>
+                <h3 className='inf'>SERVICES POUR ENTREPRISES</h3>
+                <div onClick={demande} className="card profile6">
+                    <h2>MARKTING</h2>
+                </div>
+                <div onClick={demande} className="card profile7">
+                    <h2>WEB DESIGN</h2>
+                </div>
+                <div onClick={demande} className="card profile8">
+                    <h2>GRAPHIC DESIGNER</h2>
+                </div>
+                <div onClick={demande} className="card profile4">
+                    <h2>PUBLICATION</h2>
+                </div>
+               
+                <h3 className='inf'>SERVICES INFORMATIQUES</h3>
+            </div>
+
+            <Whatsapp />
 
 
-
-
-                <Whatsapp />
-
-
-                <Footer />
-            </>
-        );
+            <Footer />
+        </>
+    );
 
 
 

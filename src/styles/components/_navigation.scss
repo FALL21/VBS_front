@@ -3,15 +3,17 @@ nav {
   border-radius: 6px;
   text-align: center;
   margin-top: 10px; 
+  box-shadow: 5px 9px 15px $color-1;
+  
   &::after {
     content: "";
-    height: 45px;
+    height: 55px;
     width: 100%;
     left: -0px;
     top:0;
     position: absolute;
     // backdrop-filter: blur(3px);
-    background: rgb(226, 193, 242);
+    background: $color-3;
     z-index: -8;
     // transform: translateX(-50%);
     //     -webkit-animation: anim 0.3s ease forwards;
@@ -23,7 +25,6 @@ div{
     text-decoration: none;
     padding: 10px;
     color: black;
-
     li {
       color: $color-2;
       transition: 0.1s;
@@ -37,13 +38,14 @@ div{
   }
 
   .nav-active {
+    border-radius: 5px;
     position: relative;
-
+    background-color: $color-1;
     &::after {
       content: "";
       height: 4px;
       width: 0;
-      background: $color-1;
+      background: black;
       position: absolute;
       border-radius: 10px;
       bottom: 0px;
