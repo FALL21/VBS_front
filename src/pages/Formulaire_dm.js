@@ -78,7 +78,7 @@ const Demande = () => {
                         <br /> <br />
                         <input type="submit" value="Envoyer" id='sub' />
                     </form> */}
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScuWZfEAhfkbSgsQCEXBgxbOpzozwQE5N712PBhIs36rGRUcw/viewform?embedded=true" width="640" height="676" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScuWZfEAhfkbSgsQCEXBgxbOpzozwQE5N712PBhIs36rGRUcw/viewform?embedded=true" width="400" height="776" frameborder="0" text-align="center" marginheight="0" marginwidth="0">Chargement…</iframe>
                   </div>
 
                   <Whatsapp/>
