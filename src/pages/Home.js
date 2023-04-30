@@ -66,21 +66,21 @@ const Home = () => {
 
     return (
         <>
-
             <section class="modal hidden" >
-                <carousel class="flex">
-                    <img className='imgctl' src="./img/catologue.png" width="500px" height="500px" alt="catalogue" />
-                    {/* <button onClick={closeModal} className="btn-close">⨉</button> */}
-                </carousel>
-
-                <button onClick={demande} class="btnd">Lancer la Demande</button>
+                <img class='imgctl' src="./img/catologue.png" width="500px" height="500px" alt="catalogue" />
+                {/* <button onClick={closeModal} class="btn-close">⨉</button> */}
+                <div class='txtctl'>
+                    z<h2>Service Lingere </h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur optio quod in eligendi at reiciendis sapiente, placeat nobis adipisci, ut dolores totam rem esse facilis minus qui eius maxime magnam!</p>
+                    <button onClick={demande} class="btnd"> Lancer la Demande </button>
+                </div>
             </section>
 
             <div class="overlay hidden"></div>
 
 
             <Logo />
-            <div className="home">
+            <div class="home">
                 <h1> Ici vos besoins sont nos missions </h1>
                 <br />
                 <h3>Trouvez le prestataire idéal pour tous vos services du quotidien</h3>
@@ -100,7 +100,7 @@ const Home = () => {
                     <img src="./imgt/location.jpg" alt="" />
     
                 </div> */}
-                <h3 className='inf'>SERVICES PERSONNELS</h3>
+            <h3 className='inf'>SERVICES PERSONNELS</h3>
             <div className="services">
                 <div onClick={demande} className="card profile">
                     <h2>MENAGE</h2>
@@ -129,7 +129,7 @@ const Home = () => {
                 </div>
                 <h3 className='inf'>SERVICES POUR ENTREPRISES</h3>
                 <div onClick={demande} className="card profile6">
-                    <h2>MARKTING</h2>
+                    <h2>MARKETING</h2>
                 </div>
                 <div onClick={demande} className="card profile7">
                     <h2>WEB DESIGN</h2>
@@ -140,13 +140,13 @@ const Home = () => {
                 <div onClick={demande} className="card profile4">
                     <h2>PUBLICATION</h2>
                 </div>
-               
+
                 <h3 className='inf'>SERVICES INFORMATIQUES</h3>
             </div>
 
             <Whatsapp />
 
-
+ 
             <Footer />
         </>
     );

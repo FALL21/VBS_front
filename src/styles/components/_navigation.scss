@@ -9,8 +9,8 @@ nav {
     content: "";
     height: 55px;
     width: 100%;
-    left: -0px;
-    top:0;
+    left: 0px;
+    top: 0px;
     position: absolute;
     // backdrop-filter: blur(3px);
     background: $color-3;
@@ -23,7 +23,7 @@ div{
 
   a {
     text-decoration: none;
-    padding: 10px;
+    padding: 15px;
     color: black;
     li {
       color: $color-2;
@@ -47,7 +47,7 @@ div{
       width: 0;
       background: black;
       position: absolute;
-      border-radius: 10px;
+      border-radius: 5px;
       bottom: 0px;
       left: 50%;
       transform: translateX(-50%);
